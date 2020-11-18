@@ -1,0 +1,23 @@
+.uni_1 {
+    font-family: 'PingHei', 'PingFang SC', 'Helvetica Neue', 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun', 'sans-serif';
+    line-height: 2;
+    color: #555;
+}
+
+.right_float {
+    display: block;
+    position: fixed;
+    max-width: 20%;
+    top: 5%;
+    right: 15%;
+}
+
+.main_pane {
+    position: relative;
+    display: block;
+    left: 15%;
+    top: 5%;
+    max-width: 50%;
+}
+
+
