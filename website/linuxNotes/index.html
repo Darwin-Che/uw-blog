@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+<link rel="stylesheet" href="/css/main.css">
+
+
+<head>
+    <title>Zhaocheng's Blog</title>
+</head>
+
+<body class='uni_1'>
+
+    <div id='right_float_0' class='right_float'>
+        <h2>
+          Che Zhaocheng
+        </h2>
+        <p1>
+          2B at the University of Waterloo
+          <br>
+          <a href='/uw-courses/'>Courses Taken</a>
+        </p1>
+        <div>
+          <p1><b>Interests</b></p1>
+          <br>
+          <p1>- CS:GO</p1>
+          <br>
+          <p1>- 红楼梦</p1>
+          <br>
+          <p1>- 三国演义</p1>
+          <br>
+          <p1>- 金庸</p1>
+        </div>
+      </div>
+<figure>
+    <figcaption>Installing shadowsocks on server side</figcaption>
+    <pre>
+      <code>
+        $ pip3 -m install setuptools
+        $ pip3 -m install git+https://github.com/shadowsocks/shadowsocks.git@master
+        // config file begin
+        {
+            "server": "0.0.0.0",
+            "port_password": {
+                "10325": "******1",
+                "10326": "******2"
+            },
+            "timeout": 300,
+            "method": "rc4-md5"
+        }
+        // config file end
+        $ ssserver -c configfile -d start/stop/restart
+      </code>
+    </pre>
+  </figure>
+
+</body>
+</html>
