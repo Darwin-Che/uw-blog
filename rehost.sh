@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usage(){
-	echo "Usage: ${0} machine_port"
+	echo "Usage: ${0} machine_port abs_addr_machine"
 	exit 1
 }
 
@@ -11,7 +11,7 @@ fi
 
 git pull
 
-abs_addr_machine="/Users/zhaochengche/Study/SELearn/MyProject/uw-blog/website"
+abs_addr_machine=${2}
 abs_addr_docker="/uw-biblog"
 container_name="uw-biblog"
 image_name="darwinche/http-server-base"
