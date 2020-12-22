@@ -30,3 +30,13 @@
 }
 
 
+pre{
+    display: block;
+    background-color: black;
+    color: white;
+    counter-reset: line;
+    tab-size: 4;
+    white-space: pre-wrap;
+    padding: 15px;
+}
+
