@@ -14,7 +14,7 @@ git pull
 abs_addr_machine="/Users/zhaochengche/Study/SELearn/MyProject/uw-blog/website"
 abs_addr_docker="/uw-biblog"
 container_name="uw-biblog"
-image_name="http-server-base"
+image_name="darwinche/http-server-base"
 
 echo "abs_addr_machine =  " ${abs_addr_machine}
 echo "abs_addr_docker =  " ${abs_addr_docker}
