@@ -3,39 +3,35 @@
 
 <html>
 <link rel="stylesheet" href="/css/main.css">
-
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 <head>
   <title>Zhaocheng's Blog</title>
 </head>
 
-
 <body class='uni_1'>
 
-  <div id='right_float_0' class='right_float'>
-    <h2>
-      Che Zhaocheng
-    </h2>
-    <p1>
-      2B at the University of Waterloo
-      <br>
-      <a href='/uw-courses/'>Courses Taken</a>
-    </p1>
-    <div>
-      <p1><b>Interests</b></p1>
-      <br>
-      <p1>- CS:GO</p1>
-      <br>
-      <p1>- 红楼梦</p1>
-      <br>
-      <p1>- 三国演义</p1>
-    </div>
+  <div w3-include-html="/navigation.html"></div>
+
+  <div id='main_pane_0' class='main_pane'>
+    <h1>Home Page</h1>
+    <h2>Content</h2>
+    <ul>
+      <li>
+        <a href="/linuxNotes/index.html"> Linux Notes </a>
+        <p>Some useful Linux commands and tools</p>
+      </li>
+      <li>
+        <a href="/uw-courses/rating.html"> Course Rating </a>
+        <p>Comments for uw students choosing courses</p>
+      </li>
+    </ul>
   </div>
 
-<div id='main_pane_0' class='main_pane'>
-  <h1>Home Page</h1>
-</div>
-
 </body>
+
+<script>
+  w3IncludeHTML();
+</script>
 
 </html>
