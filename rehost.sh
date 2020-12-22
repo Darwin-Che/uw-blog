@@ -11,7 +11,7 @@ fi
 
 git pull
 
-abs_addr_machine=${2}
+abs_addr_machine=$(pwd)
 abs_addr_docker="/uw-biblog"
 container_name="uw-biblog"
 image_name="darwinche/http-server-base"
