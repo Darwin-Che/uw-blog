@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="shortcut icon" sizes="16x16 32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<head>
+  <title>Zhaocheng's Blog</title>
+</head>
+
+<body class='whole_body'>
+
+  {# The Navigation Box #}
+  {{ navbox|safe }}
+
+  <div id='list_of_notes' class='main_pane'>
+    <h1> {{ page }} </h1>
+    <h2> {{ title }} </h2>
+    
+    <ul>
+    {% for id in atcls %}
+      <li>
+        <a href="{{ atcls[id].url }}"> {{ atcls[id].title }} </a>
+        <p> {{ atcls[id].summary }} </p>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+
+</body>
+
+
+</html>

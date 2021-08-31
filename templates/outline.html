@@ -1,0 +1,14 @@
+
+{% if prev or next %}
+
+<div id='right_float_0' class='outline'>
+    {% if prev %}
+    <a href="{{ genurl(prev) }}"> PREVIOUS : {{ db[prev]['title'] }} </a>
+    <br>
+    {% endif %}
+    {% if next %}
+    <a href="{{ genurl(next) }}"> NEXT : {{ db[next]['title'] }} </a>
+    {% endif %}
+</div>
+
+{% endif %}

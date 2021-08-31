@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="shortcut icon" sizes="16x16 32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<head>
+  <title>Zhaocheng's Blog</title>
+</head>
+
+<body class='whole_body'>
+
+  {# The Navigation Box #}
+  {{ navbox|safe }}
+
+  {{ outline|safe }}
+
+  <div id='atcltext' class='main_pane'>
+    {{ atcltext|safe }}
+  </div>
+
+</body>
+
+
+</html>
