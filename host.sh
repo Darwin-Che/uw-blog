@@ -4,7 +4,18 @@
 # install python
 # install python requirement
 
-python -m pip install -r requirements.txt
+if ! command -v python &> /dev/null
+then
+    if ! command -v python3 &> /dev/null
+    then
+        echo "python or python3 could not be found"
+        exit
+    else
+        python3 -m pip install -r requirements.txt
+    fi
+else
+    python -m pip install -r requirements.txt
+fi
 
 # install gcc cmake
 # install cmark
