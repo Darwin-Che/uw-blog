@@ -30,5 +30,5 @@ gcc gen_sum.c -o gen_sum
 
 popd
 # flask run --host=0.0.0.0
-gunicorn --workers 2 app:app
+gunicorn -b 0.0.0.0:5000 --workers 2 app:app
 
