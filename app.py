@@ -23,8 +23,9 @@ def initdb():
         if not line:
             break
         line = line.strip().split()
-        if len(line) < 4:
-            print('too short line input')
+        if len(line) < 3:
+            print('ERROR: too short line input')
+            exit(1)
         ftxt = open(f'content/{line[0]}.txt')
         db[line[0]] = {
             'url' : f'notes/{line[0]}',

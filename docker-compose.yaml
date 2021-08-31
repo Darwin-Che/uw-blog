@@ -2,19 +2,6 @@ version: '3'
 
 services:
     app:
-        build:
-            context: ../
-            dockerfile: docker/app/Dockerfile
-        image: cs348-movielist-app-image
-        container_name: cs348_movielist_app
-        restart: always
-        depends_on:
-            - mysql
-        volumes:
-            - ../:/app
-            - app_context:/context
+        build: .
         ports:
             - "5000:5000"
-        environment:
-            - USE_REAL_DATA
-            - DATABASE_HOST=cs348_movielist_mysql

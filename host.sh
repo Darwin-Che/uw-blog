@@ -1,7 +1,12 @@
+#!/bin/bash
+
 #### docker init
 # install python
 # install python requirement
-# install c++ cmake
+
+python -m pip install -r requirements.txt
+
+# install gcc cmake
 # install cmark
 
 #### jobs
@@ -23,6 +28,6 @@ gcc gen_sum.c -o gen_sum
 # start flask
 
 popd
-flask run
-
+# flask run --host=0.0.0.0
+gunicorn --workers 2 app:app
 
