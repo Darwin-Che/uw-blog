@@ -23,6 +23,8 @@ def initdb():
         if not line:
             break
         line = line.strip().split()
+        if len(line) == 0:
+            continue
         if len(line) < 3:
             print('ERROR: too short line input')
             exit(1)
@@ -53,7 +55,6 @@ def utility_processor():
 @app.route('/')
 def home():
     nav = render_template('templates/navigation.html')
-    print(db['linux-notes']['title'])
     return render_template('templates/lists.html', 
                 navbox=nav,
                 page='Home Page', 

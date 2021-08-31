@@ -1,4 +1,8 @@
-linux-notes     NULL            graph-algo      linux_notes uwaterloo courses 
-graph-algo      linux-notes     mq              algo 
-mq              graph-algo      NULL            algo
-blog-explain    NULL            NULL 
+bin_search			NULL			NULL
+blog_explain			NULL			NULL
+cpp_notes			NULL			NULL
+docker_cmds			NULL			NULL
+graph_algo			NULL			NULL
+linux_cmds			NULL			NULL
+mqueue			NULL			NULL
+tool_cmds			NULL			NULL
