@@ -13,6 +13,7 @@ python -m pip install -r requirements.txt
 # convert each markdown to .html content
 
 pushd markdown
+mkdir -p ../content
 for mdfile in *; do
     cmark < $mdfile > "../content/${mdfile%.md}.html"
 done
